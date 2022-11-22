@@ -1,0 +1,9 @@
+data: './data'
+
+ldap:
+  listen: '[::1]:3389'
+  base_dn: 'dc=example,dc=com'
+
+radius:
+  listen: '[::1]:1645'
+  secret: 's3cr3t!'
