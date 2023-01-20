@@ -3,7 +3,7 @@
 > :warning: **Early Development:** This is not production ready, yet. Do not use it for anything important.
 
 ## Introduction
-`concess` is a over-simplified, featherweight, open-source and easy-to-use authentication and authorization server.
+`concess` is an over-simplified, featherweight, open-source and easy-to-use authentication and authorization server.
 It mimics a variety of authentication protocols while managing users in a simple list of files.
 
 All data used and processed by `concess` is stored in a single directory containing a human-readable YAML file for every user.
@@ -11,10 +11,13 @@ All data used and processed by `concess` is stored in a single directory contain
 Currently, the following methods are supported:
 - [x] LDAP
 - [x] RADIUS
+- [ ] webauthn
+- [ ] OpenID connect
+- [ ] OAuth2
 
 ## Building
 `concess` is written in Rust, so a [Rust installation](https://www.rust-lang.org/) is required.
-Currently a unstable rust compiler is required to build the project.
+Currently, an unstable rust compiler is required to build the project.
 
 To build:
 ```shell
@@ -28,7 +31,7 @@ $ ./target/release/concess --version
 Create a config file called `concess.yaml` by adapting the [Example](example/concess.yaml).
 
 After that, create the `data` directory in the location specified in the config file.
-In there, create users by creating a file per user in the `users` directory inside of the `data` directory.
+In there, create users by creating a file per user in the `users` directory inside the `data` directory.
 Each user entry must follow the naming scheme `NAME.yaml`, whereas the `NAME` is the username of the user.
 See the [Examples](example/data/users/) again for inspiration and syntax.
 

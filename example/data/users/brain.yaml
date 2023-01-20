@@ -1,0 +1,10 @@
+first_name: "Rob"
+last_name: "Paulsen"
+
+mail: brain@worlddomination.example.com
+
+password: "$argon2id$v=19$m=4096,t=3,p=1$bHNqZHZobGt2amhramhla3JqaHJlZw$l2ANDPEwFedd5PR5hW6CReEVMjs8SrV7WZXMZ159aJo"
+
+groups:
+  - member
+  - admin
